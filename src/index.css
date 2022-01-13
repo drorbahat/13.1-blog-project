@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App-root {
+  height: 100vh;
+}
+
+.Nav-root {
+  background-color: rgb(182, 182, 182);
+  height: 7vh;
+}
+
+.App-content{
+  height: 93vh;
+  background-color: rgb(226, 226, 226);
+}
+
+.CreateBlog-root{
+  height: 93vh;
+  background-color: rgb(175, 152, 152);
+}
+
+.Home-root{
+  height: 100%;
+}
