@@ -67,3 +67,7 @@ a {
   margin: auto;
   width: 70%;
 }
+
+.completed {
+  text-decoration: line-through;
+}
