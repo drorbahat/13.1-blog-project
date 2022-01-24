@@ -66,14 +66,47 @@ a {
   background-color: antiquewhite;
   margin: auto;
   width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.createBlog-lable {
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+.createBlog-submit-button {
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(85, 85, 85);
+  border: 0;
+  cursor: pointer;
+}
+
+.createBlog-submit-button:hover {
+  background-color: rgb(44, 44, 44);
+
 }
 
 .BlogItem-root {
   background-color: aliceblue;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  transition: 1s
+  transition: 1s;
+  color: "black"
 }
 
 .BlogItem-root:hover {
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.delete-button {
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  color: white;
+  background-color: rgb(85, 85, 85);
+  border: 0;
+  cursor: pointer;
 }
