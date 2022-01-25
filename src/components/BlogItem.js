@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Button from '@mui/material/Button';
 
 
 
@@ -20,7 +21,7 @@ const BlogItem = ({ blog }) => {
                     <p>Written by {blog.author}</p>
                 </Link>
             </div>
-            <button onClick={handleDeleteBlog} className="delete-button">delete</button>
+            <Button variant="contained" onClick={handleDeleteBlog} className="delete-button">delete</Button>
         </div>
     )
 }

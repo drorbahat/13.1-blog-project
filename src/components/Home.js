@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import BlogItem from "./BlogItem"
 
+
 const Home = () => {
     const [blogs, setBlogs] = useState([])
 
@@ -19,10 +20,9 @@ const Home = () => {
 
     return (
         <div className="Home-root">
-            <br />
             <h1>home</h1>
-            <h2>Blogs List</h2>
-            <div>
+            <h2>here are some comments from Hanoch Daum's facebook page, have fun :) </h2>
+            <div className="blogsContainer">
                 {
                     blogs.map(blog => {
                         return <BlogItem key={`blog-item-component-${blog.id}`} blog={blog} />

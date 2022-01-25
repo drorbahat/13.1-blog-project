@@ -1,5 +1,8 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+
 
 const CreateBlog = () => {
 
@@ -35,9 +38,10 @@ const CreateBlog = () => {
             <h1>CreateBlog</h1>
             <div className="CreatBlog-main-container">
                 <form className="CreatBlog-form">
-                    <label className="createBlog-lable" htmlFor="blog-title">title:</label>
                     <br />
-                    <input
+                    <TextField
+                        label="title"
+                        variant="outlined"
                         type="text"
                         id="blog-title"
                         required
@@ -45,19 +49,21 @@ const CreateBlog = () => {
                         onChange={e => { setTitle(e.target.value) }}
                     />
                     <br /> <br />
-                    <label className="createBlog-lable" htmlFor="blog-author">author:</label>
-                    <br />
-                    <input
+                    <TextField
+                        label="author"
+                        variant="outlined"
                         type="text"
                         id="blog-author"
                         required
                         value={author}
                         onChange={e => { setAuthor(e.target.value) }}
                     />
-                    <br /><br />
-                    <label className="createBlog-lable" htmlFor="blog-body">enter post body:</label>
                     <br />
-                    <textarea
+                    <br />
+                    <TextField
+                        label="enter post body"
+                        variant="outlined"
+                        multiline={true}
                         name="blog-body"
                         id="blog-body"
                         cols="30"
@@ -65,9 +71,9 @@ const CreateBlog = () => {
                         required
                         value={body}
                         onChange={e => { setBody(e.target.value) }}
-                    ></textarea>
+                    ></TextField>
                     <br /> <br />
-                    <button onClick={saveNewBlog} className="createBlog-submit-button" type="submit">Submit</button>
+                    <Button variant="contained" onClick={saveNewBlog} className="createBlog-submit-button" type="submit">Submit</Button>
                 </form>
             </div>
         </div>

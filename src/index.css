@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
+
 body {
   margin: 0;
   font-family: 'Outfit', sans-serif;
@@ -14,6 +15,7 @@ code {
 
 a {
   text-decoration: auto;
+  color: black;
 }
 
 .App-root {
@@ -90,15 +92,31 @@ a {
 
 }
 
+.blogsContainer {
+}
+
 .BlogItem-root {
-  background-color: aliceblue;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  transition: 1s;
-  color: "black"
+  background-color: rgb(169, 221, 255);
+  box-shadow: rgba(169, 221, 255, 0.822) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  transition: 0.2s;
+  color: black;
+  padding: 1rem;
+  margin: 3rem;
+  border-radius: 1rem;
+
 }
 
 .BlogItem-root:hover {
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  background-color: rgb(186, 213, 231);
+
+  box-shadow: rgba(186, 213, 231, 0.767) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+}
+
+.BlogItem-root:active {
+  background-color: rgb(135, 156, 170);
+  box-shadow: rgba(135, 156, 170, 0.767) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
 }
 
 .delete-button {
@@ -109,4 +127,9 @@ a {
   background-color: rgb(85, 85, 85);
   border: 0;
   cursor: pointer;
+}
+
+.blogDetails-root {
+  margin: auto;
+  text-align: center;
 }

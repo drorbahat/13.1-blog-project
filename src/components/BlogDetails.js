@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { Card, CardContent, Typography } from '@mui/material/';
 
 const BlogDetails = () => {
 
@@ -20,10 +21,22 @@ const BlogDetails = () => {
     }, [])
 
     return (
-        <div>
-            <h1>{currentBlog.title}</h1>
-            <h3>Author: {currentBlog.author}</h3>
-            <p>{currentBlog.body}</p>
+        <div className="blogDetails-root">
+            <br/>
+            <Card sx={{ maxWidth: 500 }} variant="outlined" className="blogDetails-root">
+                <CardContent>
+                    <Typography variant="h5" component="div">
+                        {currentBlog.title}
+                    </Typography>
+                    <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                        Author: {currentBlog.author}
+                    </Typography>
+                    <Typography variant="body2">
+                        {currentBlog.body}
+                    </Typography>
+
+                </CardContent>
+            </Card>
         </div>
     )
 }
